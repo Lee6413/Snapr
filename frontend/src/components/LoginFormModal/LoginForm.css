@@ -1,0 +1,35 @@
+html, body, h1, h2, h3, h4, h5, h6, main, nav, div, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+#modal-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:20em;
+  width: 40em;
+  border-radius: 20px;
+}
+
+#modal-content button{
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+
+#modal-content input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content label{
+  text-decoration: double;
+}
+
+.profile-dropdown{
+  display: block;
+  margin-top: 1em;
+  flex-direction: column;
+}
