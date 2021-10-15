@@ -1,0 +1,11 @@
+.comment-detail{
+    margin: 0 0;
+}
+
+#comment {
+    border: 3px solid #FA2400;
+    /* font: 00px; */
+    background-color: #FA8072;
+    color: black;
+    text-align: center;
+}

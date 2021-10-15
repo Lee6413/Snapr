@@ -2,26 +2,25 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getComments, } from '../../store/comments';
 import SingleComment from '../SingleComment';
-// import './CommentSection.css';
+import './CommentSection.css';
 
 const CommentSection = ({photoId}) => {
   const dispatch = useDispatch();
 
   const comments = useSelector(state => {
-      return Object.values(state.comments).filter(comment => comment.photoId === photoId);
+    return Object.values(state.comments).filter(comment => comment.photoId === photoId);
   });
 
-
   useEffect(() => {
-      async function fetchData() {
-        await dispatch(getComments(photoId));
-      }
-      fetchData();
+    async function fetchData() {
+      await dispatch(getComments(photoId));
+    }
+    fetchData();
   }, [dispatch, photoId])
 
 
   if (!comments.length) {
-      return null;
+    return null;
   }
   return (
     <main>
