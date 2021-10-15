@@ -1,21 +1,14 @@
-// import './LandingPage.css';
-
+import './LandingPage.css';
 
 const LandingPage = () => {
-    //const photos = useSelector(state => state.photos);
-
-
-
-    return (
-        <>
-
-        <div className="landing_page">
-            <p className="app_title">Snapr </p>
-            <br />
-            <p className="app_headline">Join the Flickr community, home to <br/>tens of billions of photos and 2 million groups. <br/>(I'll make something more original later.)</p>
-        </div>
-        </>
-   )
+  return (
+    <div className="landing-body">
+      <div className="landing-text-container">
+        <h1 className="landing-title">Find your inspiration</h1>
+          <p className="landing-text">Join the Flickr community, home to <br/>tens of billions of photos and 2 million groups. <br/>(I'll make something more original later.)</p>
+      </div>
+    </div>
+  )
 };
 
 export default LandingPage;

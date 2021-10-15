@@ -1,0 +1,23 @@
+#image-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 3em 15%;
+    padding: 1%;
+    height: auto;
+    margin-top: 3em;
+    border-radius: 10px;
+    background-color: #c8c8c8;
+    box-shadow: 1px 1px .4em rgb(36, 36, 36), -1px -1px .4em rgb(36, 36, 36);
+    flex-wrap: wrap;
+  }
+
+.browser-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #DFDFDF;
+    height: 330px;
+    margin: 5px;
+    width: 495px;
+    box-shadow: 1px 1px .4em rgb(36, 36, 36), -1px -1px .4em rgb(36, 36, 36);
+  }

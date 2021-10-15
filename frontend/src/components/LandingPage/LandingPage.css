@@ -1,0 +1,90 @@
+.landing-body {
+  background-image: url(../../assets/pic-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 5s;
+}
+
+.landing-text-container {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+  text-shadow: -1px -1px 10px black;
+  margin: 15%;
+}
+
+.landing-title {
+  margin: 5%;
+  font-size: 50px;
+}
+
+.landing-text {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.landing-body {
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(../../assets/pic-1.jpg);
+  }
+
+  10% {
+    background-image: url(../../assets/pic-2.jpg);
+  }
+
+  20% {
+    background-image: url(../../assets/pic-3.jpg);
+  }
+
+  30% {
+    background-image: url(../../assets/pic-4.JPG);
+  }
+
+  40% {
+    background-image: url(../../assets/pic-5.JPG);
+  }
+
+  50% {
+    background-image: url(../../assets/pic-6.JPG);
+  }
+
+  60% {
+    background-image: url(../../assets/pic-7.JPG);
+  }
+
+  70% {
+    background-image: url(../../assets/pic-8.JPG);
+  }
+
+  80% {
+    background-image: url(../../assets/pic-9.JPG);
+  }
+
+  90% {
+    background-image: url(../../assets/pic-10.JPG);
+  }
+
+  100% {
+    background-image: url(../../assets/pic-11.JPG);
+  }
+}
