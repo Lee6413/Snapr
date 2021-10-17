@@ -1,0 +1,23 @@
+.textarea {
+  resize: none;
+  border: 2px solid black;
+  width: 500px;
+  height: 100px;
+}
+
+.button {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 105, 51);
+  width: 500px;
+  height: 40px;
+  color:white;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+}

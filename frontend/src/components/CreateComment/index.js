@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { createComment, } from '../../store/comments';
 import { useHistory } from 'react-router-dom';
+import './CreateComment.css';
 
 const CreateComment = ({photoId}) => {
   const userId = useSelector(state => state.session.user?.id);
@@ -25,7 +26,7 @@ const CreateComment = ({photoId}) => {
     try{
       const createdComment = await dispatch(createComment(payload));
       if (createdComment) {
-          history.push(`/photos/${photoId}`);
+        history.push(`/photos/${photoId}`);
       }
     } catch (err){
       const errorResponse = await err.json();
@@ -43,12 +44,15 @@ const CreateComment = ({photoId}) => {
           {errors.map((error)=>(
             <p key={error}>{error}</p>
           ))}
-          <input
+          <textarea
+            className="textarea"
             type="text"
             placeholder="Comment Here"
             value={content}
             onChange={updateContent} />
-          <button type="submit">Post Comment</button>
+          <div>
+            <button className="button" type="submit">Post Comment</button>
+          </div>
         </form>)
       }
     </>

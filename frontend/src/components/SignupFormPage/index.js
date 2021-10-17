@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
-// import "./SignupForm.css";
+import "./SignupForm.css";
 
 function SignupFormPage() {
   const dispatch = useDispatch();
@@ -29,50 +29,50 @@ function SignupFormPage() {
   };
 
   return (
-    <div className="signup_page">
+    <div className="signup-container">
       <form onSubmit={handleSubmit} class="signup-form">
-        <h1> Create a New Account </h1>
+        <h1 className="signup-item signup-header"> Create a New Account </h1>
         <br />
-        <ul>
-          {errors.map((error, idx) => <li key={idx}>{error}</li>)}
+        <ul className="error-list">
+          {errors.map((error, idx) => <li className="error-li" key={idx}>{error}</li>)}
         </ul>
-        <label>
-          Email
-          <input
-            type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Username
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Password
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Confirm Password
-          <input
-            type="password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-          />
-        </label>
-        <button type="submit">Sign Up</button>
+        <label className="signup-item signup-label"/>
+        <h4 className="text">Email</h4>
+        <input
+          className="signup-item"
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <label className="signup-item signup-label"/>
+        <h4 className="text">Username</h4>
+        <input
+          className="signup-item"
+          type="text"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+        <label className="signup-item signup-label"/>
+        <h4 className="text">Password</h4>
+        <input
+          className="signup-item"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <label className="signup-item signup-label"/>
+        <h4 className="text">Confirm Password</h4>
+        <input
+          className="signup-item"
+          type="password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+          required
+        />
+        <button className="signup-item signup-button" type="submit">Sign Up</button>
       </form>
     </div>
   );

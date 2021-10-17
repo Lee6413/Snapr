@@ -1,0 +1,51 @@
+.photo-detail-container{
+  /* box-shadow: 1px 1px .4em rgb(36, 36, 36);
+  border-radius: 2em;
+  width: 60%;
+  margin: auto 20%;
+  margin-top: 1em;
+  padding: 1em; */
+  justify-content: center;
+  height: 150%;
+  background-color: dodgerblue;
+  margin-top: 10px;
+}
+
+.photo-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-left: 8%;
+  /* margin-top: 7.5%; */
+  box-shadow: 1px 1px .4em rgb(36, 36, 36);
+  background-color:rgb(228, 233, 237);
+  border-radius: 2em;
+  padding: 1%;
+}
+
+.photo-detail img{
+  display:block;
+  width: 30em;
+  height: auto;
+  margin: auto;
+  box-shadow: 1px 1px .4em rgb(36, 36, 36)
+}
+
+.photo-detail h4{
+  font-size: 30px;
+  text-align: center;
+}
+
+.photo-detail p{
+  padding: 0em 18px;
+  padding-top: 1em;
+  font-size: 18px;
+  text-align: center;
+}
+
+.photo-create-comment {
+  /* margin-left: 5em; */
+  padding: 10px;
+}
