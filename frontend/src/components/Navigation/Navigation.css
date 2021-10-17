@@ -7,6 +7,10 @@
     box-shadow: 1px 1px .4em rgb(36, 36, 36);
 }
 
+.nav-bar li {
+    z-index: 1;
+}
+
 a{
     padding: 2em;
     color: white;
