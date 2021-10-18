@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     description: {
       type: DataTypes.STRING,
       validate: {
-        len: [0, 255],
+        len: [0, 750],
       }
     }
   }, {});

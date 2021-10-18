@@ -18,8 +18,8 @@ const imageUrl = check('imageUrl')
   .isURL({ require_protocol: false, require_host: false })
   .withMessage('Please provide a link or image address as a url');
 const description = check('description')
-  .isLength({ min: 0, max:255 })
-  .withMessage('Description must be less than 255 characters');
+  .isLength({ min: 0, max:750 })
+  .withMessage('Description must be less than 750 characters');
 
 
   exports.validateCreate = [
