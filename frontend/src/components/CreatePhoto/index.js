@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { createPhoto, } from '../../store/photos';
 import { useHistory } from 'react-router-dom';
-// import './CreatePhoto.css';
+import './CreatePhoto.css';
 
 
 const CreatePhoto = () => {
@@ -43,34 +43,49 @@ const CreatePhoto = () => {
       };
 
 
-    return (
-        <>
-            { userId && (
-                <form onSubmit={handleSubmit} className='form'>
-                    <h3> Upload a new photo </h3>
-                    {errors.map((error)=>(
-                        <p key={error}>{error}</p>
-                    ))}
-                    <input
-                        type="text"
-                        placeholder="Title"
-                        value={title}
-                        onChange={updateTitle} />
-                    <input
-                    type="text"
-                    placeholder="Image URL"
-                    value={imageUrl}
-                    onChange={updateImageUrl} />
-                    <input
-                    type="text"
-                    placeholder="description"
-                    value={description}
-                    onChange={updateDescription} />
-                    <button type="submit">Create new photo</button>
-                </form>)
-            }
-        </>
-   )
+  return (
+    <>
+      { userId && (
+        <form onSubmit={handleSubmit} className='post-photo-form'>
+          <div>
+            <h3> Upload a new photo </h3>
+          </div>
+          <div>
+          {errors.map((error)=>(
+              <p key={error}>{error}</p>
+          ))}
+          </div>
+          <div className="photo-title">
+            <input
+              className="photo-input"
+              type="text"
+              placeholder="Title"
+              value={title}
+              onChange={updateTitle} />
+          </div>
+          <div className="photo-url">
+            <input
+            className="photo-input"
+            type="text"
+            placeholder="Image URL"
+            value={imageUrl}
+            onChange={updateImageUrl} />
+          </div>
+          <div className="photo-text">
+            <textarea
+            className="photo-input photo-textarea"
+            type="text"
+            placeholder="description"
+            value={description}
+            onChange={updateDescription} />
+          </div>
+          <div className="photo-button">
+            <button className="photo-input" type="submit">Create new photo</button>
+          </div>
+        </form>)
+      }
+    </>
+  )
 };
 
 export default CreatePhoto;

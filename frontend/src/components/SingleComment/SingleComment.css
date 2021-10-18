@@ -1,0 +1,19 @@
+.edit-button {
+  background-color: rgb(206, 206, 0);
+  margin-right: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 2px;
+  color:white;
+  text-align: center;
+}
+
+.delete-button {
+  background-color: rgb(206, 0, 0);
+  margin-left: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 2px;
+  color:white;
+  text-align: center;
+}

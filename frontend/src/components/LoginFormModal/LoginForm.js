@@ -21,32 +21,36 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <ul>
-        {errors.map((error, idx) => (
-          <li key={idx}>{error}</li>
-        ))}
-      </ul>
-      <label>
-        Username or Email
+    <div className="login-container">
+      <form onSubmit={handleSubmit} className="login-form">
+        <h1 className="login-item login-header">Welcome Back</h1>
+        <br />
+        <ul className="error-list">
+          {errors.map((error, idx) => (
+            <li key={idx}>{error}</li>
+          ))}
+        </ul>
+        <label className="login-item login-label"/>
+        <h4 className="text">Username or Email</h4>
         <input
+          className="login-item"
           type="text"
           value={credential}
           onChange={(e) => setCredential(e.target.value)}
           required
         />
-      </label>
-      <label>
-        Password
+        <label className="login-item login-label"/>
+        <h4 className="text">Password</h4>
         <input
+          className="login-item"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-      </label>
-      <button type="submit">Log In</button>
-    </form>
+        <button className="login-item login-button" type="submit">Log In</button>
+      </form>
+    </div>
   );
 }
 

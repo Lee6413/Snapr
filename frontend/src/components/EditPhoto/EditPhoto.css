@@ -1,0 +1,37 @@
+.form{
+  width: auto;
+  height: auto;
+  margin: 55px;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.form p{
+  color:rgb(255, 61, 61);
+  background-color: rgb(66, 66, 66);
+  border-radius: 3px;
+  width: 500px;
+  margin: 55px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin:5px auto ;
+  box-shadow: 1px 1px .4em rgb(36, 36, 36);
+}
+
+.form input{
+  width: 30em;
+  height: 1.5em;
+  box-shadow: 1px 1px .4em rgb(36, 36, 36);
+}
+
+.form label{
+  margin-top: 5px;
+  display: block;
+  text-align: left;
+  font-size: 1em;
+}

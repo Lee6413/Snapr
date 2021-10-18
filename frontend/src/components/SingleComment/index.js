@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteComment } from '../../store/comments';
 import EditComment from '../EditComment';
+import './SingleComment.css'
 
 const SingleComment = ({comment}) => {
-    //const photos = useSelector(state => state.photos);
     const userId = useSelector(state => state.session.user?.id);
     const dispatch = useDispatch();
 
@@ -38,8 +38,8 @@ const SingleComment = ({comment}) => {
               <p key={comment.id}>
                 {comment.content}
               </p>}
-            {(ownerPermission && !showEditForm) ? <button onClick={() => setShowEditForm(!showEditForm)}>Edit Comment</button> : null}
-            {(ownerPermission && !showEditForm) ? <button onClick={handleDelete}>Delete Comment</button> : null}
+            {(ownerPermission && !showEditForm) ? <button className="edit-button" onClick={() => setShowEditForm(!showEditForm)}>Edit Comment</button> : null}
+            {(ownerPermission && !showEditForm) ? <button className="delete-button" onClick={handleDelete}>Delete Comment</button> : null}
             {content}
               <br />
         </ div>

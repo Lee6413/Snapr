@@ -30,7 +30,7 @@ function SignupFormPage() {
 
   return (
     <div className="signup-container">
-      <form onSubmit={handleSubmit} class="signup-form">
+      <form onSubmit={handleSubmit} className="signup-form">
         <h1 className="signup-item signup-header"> Create a New Account </h1>
         <br />
         <ul className="error-list">

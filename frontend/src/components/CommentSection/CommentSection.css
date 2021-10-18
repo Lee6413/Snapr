@@ -5,9 +5,10 @@
 }
 
 #comment {
-  border: 3px solid #FA2400;
+  border: 1px solid #ffffff;
   /* font: 00px; */
-  background-color: #FA8072;
-  color: black;
+  background-color: #a1a1a1;
+  color: whitesmoke;
   text-align: center;
+  margin-top: 3px;
 }

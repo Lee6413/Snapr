@@ -15,21 +15,30 @@ function Navigation({ isLoaded }){
     );
   } else {
     sessionLinks = (
-      <>
-        <LoginFormModal />
-        <NavLink to="/signup">Sign Up</NavLink>
+     <>
+      <div className="nav-site-link-container">
+        <NavLink className="nav-link photos" exact to="/photos">Photos</NavLink>
+        <LoginFormModal className="nav-link" />
+        <NavLink className="nav-link" to="/signup">Sign Up</NavLink>
+      </div>
       </>
     );
   }
 
   return (
-    <ul className="nav-bar">
-      <li>
-        <NavLink exact to="/">Snapr</NavLink>
-        <NavLink exact to="/photos">Browse and Upload</NavLink>
-        {isLoaded && sessionLinks}
-      </li>
-    </ul>
+    <nav className="nav-container">
+      <>
+      <div className="nav-logo">
+        <NavLink exact to="/" className="nav-link"><i className="fab fa-flickr"></i></NavLink>
+        <h1 className="nav-snapr">Snapr</h1>
+      </div>
+      <ul>
+        <li>
+          {isLoaded && sessionLinks}
+        </li>
+      </ul>
+      </>
+    </nav>
   );
 }
 

@@ -62,8 +62,14 @@ export const SinglePhotoPage = () => {
         <div>
           <p>{selectedPhoto.description}</p>
         </div>
-        {selectedPhoto.userId === userId ? <button onClick={() => setShowEditForm(!showEditForm)}>Edit Photo</button> : null}
-        {selectedPhoto.userId === userId ? <button onClick={handleDelete}>Delete Photo</button> : null}
+        <div className="row-button">
+          <div>
+            {selectedPhoto.userId === userId ? <button className="edit-button" onClick={() => setShowEditForm(!showEditForm)}>Edit Photo</button> : null}
+          </div>
+          <div>
+            {selectedPhoto.userId === userId ? <button className="delete-button" onClick={handleDelete}>Delete Photo</button> : null}
+          </div>
+        </div>
         {content}
          <div className="photo-create-comment">
           <CreateComment photoId = {selectedPhoto.id} />

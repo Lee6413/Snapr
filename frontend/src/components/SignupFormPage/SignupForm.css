@@ -6,7 +6,7 @@
   display:flex;
   flex-direction: column;
   width: 520px;
-  margin: 0 auto;
+  margin: auto;
   box-shadow: 0 1px 1px #D0D0C8;
   border-radius:6px;
   padding: 20px;
@@ -14,7 +14,7 @@
   padding-left: 40px;
   position: relative;
   top: 30px;
-  background-color: #f3f3f3;
+  background-color: rgba(220, 233, 233, 0.5);
 }
 
 .signup-form {
@@ -33,8 +33,7 @@
 .signup-button {
   border-radius: 28px;
   border: none;
-  background-color: rgb(255, 105, 51);
-  /* background-color: #79A9D1; */
+  background-color: rgb(74, 194, 26);
   width:50%;
   color:white;
   margin-top: 20px;

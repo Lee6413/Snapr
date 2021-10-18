@@ -26,6 +26,7 @@ const PhotoPage = () => {
       }
     return (
       <main>
+        <CreatePhoto  />
         <div id="image-container">
           { photos.map((photo) => {
             return (

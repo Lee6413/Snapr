@@ -1,0 +1,33 @@
+.post-photo-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 220px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 1px 1px .4em rgb(36, 36, 36);
+  background-color: rgb(77, 77, 77);
+  border-radius: 5px;
+}
+
+.post-photo-form > div {
+  padding-top: 10px;
+  width: 500px;
+  color: white;
+}
+
+.photo-input {
+  width: 50%;
+}
+
+.post-photo-form > div > button {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(74, 194, 26);
+  color: white;
+}
+
+.photo-textarea {
+  resize: none;
+  height: 75px;
+}

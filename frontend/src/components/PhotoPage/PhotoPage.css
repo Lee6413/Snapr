@@ -7,7 +7,7 @@
     height: auto;
     margin-top: 3em;
     border-radius: 10px;
-    background-color: #c8c8c8;
+    background-color:rgb(77, 77, 77);
     box-shadow: 1px 1px .4em rgb(36, 36, 36), -1px -1px .4em rgb(36, 36, 36);
     flex-wrap: wrap;
   }
